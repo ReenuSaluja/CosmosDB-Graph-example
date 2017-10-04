@@ -1,0 +1,13 @@
+hosts: [yourHostName.graphs.azure.com]
+
+port: 443
+
+username: /dbs/<Database ID>1/colls/<Graph ID>
+
+password: yourPassword
+
+connectionPool: {
+
+  enableSsl: true}
+
+serializer: { className: org.apache.tinkerpop.gremlin.driver.ser.GraphSONMessageSerializerV1d0, config: { serializeResultToString: true }}
